@@ -1,0 +1,37 @@
+.search .searchtext {
+  width: 28%;
+  background: #E8EAEB;
+  margin: 0 auto;
+  padding: 6px;
+  border-radius: 25px;
+}
+.search .searchtext div {
+  display: inline;
+}
+.search .searchtext .searchInput {
+  width: 86%;
+  border: none;
+  outline: none;
+  margin: 5px;
+  background: none;
+}
+.search .searchtext .searchicon {
+  background: #0008C1;
+  padding: 7px;
+  border-radius: 50%;
+}
+.search .searchtext .searchicon i {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+}
+.container {
+  background: #E6E6E6;
+}
+.container .gender {
+  margin: 5px;
+}
+.container .gender i {
+  font-size: 18px;
+  margin: 5px;
+}
