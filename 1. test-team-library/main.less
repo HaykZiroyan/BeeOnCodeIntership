@@ -70,5 +70,72 @@ body {
 
         }
     }
+    .elements{
+        .elementsTop {
+            display: flex;
+            flex-direction : row;
+            .subCategories {
+                width: 71%;
+                .subCategorySection {
+                    padding: 10px 30px;
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    .subcategory {
+                        padding-left: 10px;
+                        text-transform: capitalize;
+                        width: 20%;
+                    }
+                }
+                .rowSection {
+                    height: 4px;
+                    background-color: #fff;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .clickedSection {
+                        width: 20%;
+                    }
+                    .first {
+                        background-color: #0008C1;
+                    }
+                }
+            }
+            .addSubCategory {
+                background: #fff;
+                margin-top: 25px;
+                margin-left: 20px;
+                width: 3.6%;
+                position: relative;
+
+                .center {
+                    position: absolute;
+                    top: 50%;
+                    color: #1F1617;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        
+    }
+    .grid-container {
+        display: grid;
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-columns: auto auto auto auto auto auto;
+        padding: 10px;
+        .grid-item {
+            background: #fff;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            
+            img {
+                width: 80%;
+            }
+          }
+      }
+
 
 }
