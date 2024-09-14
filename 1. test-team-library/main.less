@@ -1,4 +1,8 @@
+body {
+    margin: 0;
+}
 .search {
+    margin: 15px 0;
     .searchtext{
         width: 28%;
         background: #E8EAEB;
@@ -30,12 +34,41 @@
 
 }
 .container {
+    padding: 30px;
     background: #E6E6E6;
-    .gender {
-        margin: 5px;
-        i {
-            font-size: 18px;
+    .filter {
+        display: flex;
+        justify-content: space-between;
+        .gender {
+            width: 3.8%;
             margin: 5px;
+            i {
+                font-size: 18px;
+                margin: 5px;
+            }
+        }
+        .categories {
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            .category {
+                background: #fff;
+                width: 10.5%;
+                text-align:center;
+                padding: 5px;
+                img {
+                    background-color: none;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            .addCategory {
+                background: #fff;
+                width: 3%;
+            }
+
         }
     }
+
 }
