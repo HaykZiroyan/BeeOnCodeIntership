@@ -107,17 +107,9 @@ body {
                 margin-left: 20px;
                 width: 3.6%;
                 position: relative;
-
-                .center {
-                    position: absolute;
-                    top: 50%;
-                    color: #1F1617;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
             }
+
         }
-        
     }
     .grid-container {
         display: grid;
@@ -134,8 +126,103 @@ body {
             img {
                 width: 80%;
             }
+            .itemDetails {
+                display: flex;
+                justify-content: space-between;
+                line-height: 17px;
+                span {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #2E2E2E;
+
+                }
+            }
           }
       }
 
+    .add {
+        background-color: #0008C1;
+        width: 75%;
+        border: none;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 6px;
+        color: #fff;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
+}
+
+.grey {
+    opacity: 0.5;
+    background-color: #252525;
+}
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+
+    
+}
+.dropbtn {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #1F1617;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.btncategory {
+    margin: 0;
+    margin-top: 30%;
+}
+.dropdown-content {
+    padding: 20px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 565%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+        p {
+            margin-right: 10px;
+            margin: 0 10% 0 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+    input {
+        border: none;
+        outline: none;
+        width: 80%;
+    }
+    hr {
+        width: 80%;
+        float: left;
+    }
+}
+.widthCategory {
+    width: 20%;
+    margin-right: 2%;
+    margin-top: 25px;
+    div {
+        justify-content: space-between;
+    }
+}   
+.show {
+    display: block;
 }

@@ -51,8 +51,17 @@
                     <img src="./resources/images/bracelets.svg" alt="">
                     <p>браслеты</p>
                 </div>
-                <div class="addCategory category">
-                    +
+                <div class="addCategory category dropdowns">
+                    <button onclick="addCategories()" class="dropbtn btncategory">+</button>
+                    <div id="addCategory" class="dropdown-content widthCategory">
+                        <div>
+                            <p>добавить категория</p>
+                            <i class="fa-solid fa-xmark" onclick="addCategories()"></i>
+                        </div>
+                      <input type="text" placeholder="подкатегория">
+                      <hr>
+                      <button class="add">добавить</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,9 +83,18 @@
                         <div class="clickedSection"></div>
                     </div>
                 </div>
-                <div class="addSubCategory">
-                    <span class="center">+</span>
-                </div>
+                <div class="dropdown">
+                    <button onclick="addSubCategories()" class="dropbtn">+</button>
+                    <div id="addSubCategory" class="dropdown-content">
+                        <div>
+                            <p>кольцo : добавить подкатегория</p>
+                            <i class="fa-solid fa-xmark" onclick="addSubCategories()"></i>
+                        </div>
+                      <input type="text" placeholder="подкатегория">
+                      <hr>
+                      <button class="add">добавить</button>
+                    </div>
+                  </div>                  
             </div>
             <div class="grid-container">
                 <div class="grid-item">
@@ -336,5 +354,6 @@
     </div>
     
     <script src="https://kit.fontawesome.com/e42f7ffb38.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
