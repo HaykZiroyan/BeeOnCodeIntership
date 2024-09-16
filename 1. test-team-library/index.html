@@ -54,12 +54,29 @@
                 <div class="addCategory category dropdowns">
                     <button onclick="addCategories()" class="dropbtn btncategory">+</button>
                     <div id="addCategory" class="dropdown-content widthCategory">
-                        <div>
+                        <div class="top">
                             <p>добавить категория</p>
                             <i class="fa-solid fa-xmark" onclick="addCategories()"></i>
                         </div>
-                      <input type="text" placeholder="подкатегория">
+                        <div class="genders">
+                            <div class="female">
+                                <i class="fa-solid fa-venus"></i>
+                                <span>женский</span>
+                            </div>
+                            <div class="male">
+                                <i class="fa-solid fa-mars"></i>
+                                <span>мужской</span>
+                            </div>
+                        </div>
+                      <input type="text" placeholder="категория" class="names">
                       <hr>
+                      <input type="file" id="myFile" style="display:none;" />
+                      <button type="button" onclick="document.getElementById('myFile').click();" class="uploadPic">
+                        <img src="./resources/images/uploadImage.png" alt="">
+                        <br>
+                        <p>загрузить фото</p>
+                      </button>
+                      
                       <button class="add">добавить</button>
                     </div>
                 </div>
@@ -86,11 +103,11 @@
                 <div class="dropdown">
                     <button onclick="addSubCategories()" class="dropbtn">+</button>
                     <div id="addSubCategory" class="dropdown-content">
-                        <div>
+                        <div class="top">
                             <p>кольцo : добавить подкатегория</p>
                             <i class="fa-solid fa-xmark" onclick="addSubCategories()"></i>
                         </div>
-                      <input type="text" placeholder="подкатегория">
+                      <input type="text" placeholder="подкатегория" class="names">
                       <hr>
                       <button class="add">добавить</button>
                     </div>
