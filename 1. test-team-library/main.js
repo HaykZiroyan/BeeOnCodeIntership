@@ -4,17 +4,40 @@ function addSubCategories() {
 function addCategories() {
     document.getElementById("addCategory").classList.toggle("show");
 }
-fetch('http://localhost:3000/users')
-  .then(response => response.json())
-  .then(users => console.log(galery));
-  const newUser = { name: 'New User', email: 'newuser@example.com' };
+// fetch("http://localhost:3000/galery")
+// .then(response => response.json())
+// .then(data => {
+//     console.log(data)
+// })
 
-fetch('http://localhost:3000/galery', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(newUser),
-})
-.then(response => response.json())
-.then(user => console.log(user));
+document.getElementById('uploadForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const fileInput = document.getElementById('imageFile');
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert('Please select an image!');
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append('image', file);
+
+    // Upload image to a mock server endpoint
+    fetch('/upload', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            const imageUrl = data.url;
+        } else {
+            document.getElementById('result').innerHTML = '<p>Error uploading image: ' + data.message + '</p>';
+        }
+    })
+    .catch(error => {
+        document.getElementById('result').innerHTML = '<p>An error occurred: ' + error.message + '</p>';
+    });
+});

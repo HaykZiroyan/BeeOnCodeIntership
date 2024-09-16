@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "concurrently": "^9.0.1",
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1"
+  },
+"scripts": {
+  "start:json-server": "json-server --watch db.json --port 3000",
+  "start:server": "node server.js",
+  "start": "concurrently \"npm run start:json-server\" \"npm run start:server\""
+}
+}
