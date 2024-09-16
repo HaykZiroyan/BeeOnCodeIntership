@@ -1,0 +1,47 @@
+{
+    "galery": {
+        "ring": {
+            "image": "",
+            "name": "кольцo",
+            "subCategory": [
+                {
+                    "name": "обручальные ",
+                    "products": [
+                        {
+                        "id": 1,
+                        "code": "A250",
+                        "price": 1000
+                        },
+                        {
+                            "id": 2,
+                            "code": "A856",
+                            "price": 2000
+                        }
+                    ]
+                },
+                {
+                    "name": "кольца кастеты",
+                    "products": [
+
+                    ]
+                },
+                {
+                    "name": "коктейльные",
+                    "products": []
+                },
+                {
+                    "name": "помолвочные",
+                    "products":[]
+                }
+            ]
+                
+
+        },
+        "necklace": {},
+        "earings": {},
+        "chain": {},
+        "brooch": {},
+        "pendants": {},
+        "bracelets": {}
+    }
+}

@@ -285,3 +285,11 @@ body {
   width: 20%;
   margin-top: 20px;
 }
+.addProductTop {
+  display: flex;
+  justify-content: space-between;
+}
+.addProductTop p {
+  font-weight: 600;
+  line-height: 19.5px;
+}
