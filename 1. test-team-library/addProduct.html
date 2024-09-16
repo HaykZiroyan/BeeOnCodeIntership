@@ -111,10 +111,10 @@
                   </div>                  
             </div>
         </div>
-        <form action="" class="addproduct">
+        <form id="myForms" class="addproduct" method="post">
             <div class="detailed">
                 <div class="addImaged">
-                    <input type="file" id="myFile" style="display:none;" />
+                    <input  id="imageFile" type="file" id="myFile" style="display: none;" />
                     <button type="button" onclick="document.getElementById('myFile').click();" class="uploadPic">
                       <img src="./resources/images/uploadImage.png" alt="">
                       <br>
@@ -125,17 +125,15 @@
                     <div>
                         <label for="code">артикул</label> 
                         <br>
-                        <input type="text" id="code" >
+                        <input type="text" id="code">
                         <hr>
                     </div>
                     <div>
                         <label for="price">цена </label>
                         <br>
-                        <input type="text" id="price">
+                        <input type="text" id="price" >
                         <hr>
                     </div>
-                    <div id="result">g</div>
-
                 </div>
             </div>
 
@@ -144,5 +142,6 @@
     </div>
     <script src="https://kit.fontawesome.com/e42f7ffb38.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <!-- <script src="server.js"></script> -->
 </body>
 </html>
