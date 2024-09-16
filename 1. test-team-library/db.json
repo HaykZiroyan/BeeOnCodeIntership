@@ -1,7 +1,7 @@
 {
     "galery": {
         "ring": {
-            "image": "",
+            "image": "./resources/images/ring.svg",
             "name": "кольцo",
             "subCategory": [
                 {
@@ -34,14 +34,216 @@
                     "products":[]
                 }
             ]
-                
-
         },
-        "necklace": {},
-        "earings": {},
-        "chain": {},
-        "brooch": {},
-        "pendants": {},
-        "bracelets": {}
+        "necklace": {
+            "image": "./resources/images/necklace.svg",
+            "name": "кольцo",
+            "subCategory": [
+                {
+                    "name": "обручальные ",
+                    "products": [
+                        {
+                        "id": 1,
+                        "code": "A250",
+                        "price": 1000
+                        },
+                        {
+                            "id": 2,
+                            "code": "A856",
+                            "price": 2000
+                        }
+                    ]
+                },
+                {
+                    "name": "кольца кастеты",
+                    "products": [
+
+                    ]
+                },
+                {
+                    "name": "коктейльные",
+                    "products": []
+                },
+                {
+                    "name": "помолвочные",
+                    "products":[]
+                }
+            ]
+        },
+        "earings": {
+            "image": "./resources/images/earings.svg",
+            "name": "кольцo",
+            "subCategory": [
+                {
+                    "name": "обручальные ",
+                    "products": [
+                        {
+                        "id": 1,
+                        "code": "A250",
+                        "price": 1000
+                        },
+                        {
+                            "id": 2,
+                            "code": "A856",
+                            "price": 2000
+                        }
+                    ]
+                },
+                {
+                    "name": "кольца кастеты",
+                    "products": [
+
+                    ]
+                },
+                {
+                    "name": "коктейльные",
+                    "products": []
+                },
+                {
+                    "name": "помолвочные",
+                    "products":[]
+                }
+            ]
+        },
+        "chain": {
+            "image": "./resources/images/chain.svg",
+            "name": "кольцo",
+            "subCategory": [
+                {
+                    "name": "обручальные ",
+                    "products": [
+                        {
+                        "id": 1,
+                        "code": "A250",
+                        "price": 1000
+                        },
+                        {
+                            "id": 2,
+                            "code": "A856",
+                            "price": 2000
+                        }
+                    ]
+                },
+                {
+                    "name": "кольца кастеты",
+                    "products": [
+
+                    ]
+                },
+                {
+                    "name": "коктейльные",
+                    "products": []
+                },
+                {
+                    "name": "помолвочные",
+                    "products":[]
+                }
+            ]
+        },
+        "brooch": {
+            "image": "./resources/images/brooch.svg",
+            "name": "кольцo",
+            "subCategory": [
+                {
+                    "name": "обручальные ",
+                    "products": [
+                        {
+                        "id": 1,
+                        "code": "A250",
+                        "price": 1000
+                        },
+                        {
+                            "id": 2,
+                            "code": "A856",
+                            "price": 2000
+                        }
+                    ]
+                },
+                {
+                    "name": "кольца кастеты",
+                    "products": [
+
+                    ]
+                },
+                {
+                    "name": "коктейльные",
+                    "products": []
+                },
+                {
+                    "name": "помолвочные",
+                    "products":[]
+                }
+            ]
+        },
+        "pendants": {
+            "image": "./resources/images/pendants.svg",
+            "name": "кольцo",
+            "subCategory": [
+                {
+                    "name": "обручальные ",
+                    "products": [
+                        {
+                        "id": 1,
+                        "code": "A250",
+                        "price": 1000
+                        },
+                        {
+                            "id": 2,
+                            "code": "A856",
+                            "price": 2000
+                        }
+                    ]
+                },
+                {
+                    "name": "кольца кастеты",
+                    "products": [
+
+                    ]
+                },
+                {
+                    "name": "коктейльные",
+                    "products": []
+                },
+                {
+                    "name": "помолвочные",
+                    "products":[]
+                }
+            ]
+        },
+        "bracelets": {
+            "image": "./resources/images/bracelets.svg",
+            "name": "кольцo",
+            "subCategory": [
+                {
+                    "name": "обручальные ",
+                    "products": [
+                        {
+                        "id": 1,
+                        "code": "A250",
+                        "price": 1000
+                        },
+                        {
+                            "id": 2,
+                            "code": "A856",
+                            "price": 2000
+                        }
+                    ]
+                },
+                {
+                    "name": "кольца кастеты",
+                    "products": [
+
+                    ]
+                },
+                {
+                    "name": "коктейльные",
+                    "products": []
+                },
+                {
+                    "name": "помолвочные",
+                    "products":[]
+                }
+            ]
+        }
     }
 }

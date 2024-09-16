@@ -4,6 +4,25 @@ function addSubCategories() {
 function addCategories() {
     document.getElementById("addCategory").classList.toggle("show");
 }
+const categories = document.getElementById("categories")
+fetch("http://localhost:3000/galery")
+.then(res => res.json())
+.then(data => {
+    Object.keys(data).forEach(function(key, index) {
+        let category = document.createElement("div")
+        category.className = "category"
+
+        let image = document.createElement("img")
+        image.src = data[key].image
+
+        let text = document.createElement('p')
+        text.textContent = data[key].name
+
+        category.append(image, text)
+
+        categories.appendChild(category)
+    });
+})
 // const form = document.getElementById('myForms');
 
 // form.addEventListener('submit', (e) => {
@@ -22,11 +41,7 @@ function addCategories() {
 //   console.log(formData.length);
 // });
 
-// fetch("http://localhost:3000/galery")
-// .then(response => response.json())
-// .then(data => {
-//     console.log(data)
-// })
+
 // document.getElementById('itemForm').addEventListener('submit', function(event) {
 //     event.preventDefault();
 
