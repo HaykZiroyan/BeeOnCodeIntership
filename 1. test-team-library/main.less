@@ -71,9 +71,15 @@ body {
         }
     }
     .elements{
+        .addProduct {
+            text-decoration: none;
+            font-size: 20px;
+            margin: 20px;
+        }
         .elementsTop {
             display: flex;
             flex-direction : row;
+            margin-bottom: 20px;
             .subCategories {
                 width: 71%;
                 .subCategorySection {
@@ -93,6 +99,8 @@ body {
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+                    box-shadow: 0px 0px 10px 0px #00000040;
+
                     .clickedSection {
                         width: 20%;
                     }
@@ -255,4 +263,39 @@ body {
         color: white;
         
     }
+}
+.noBackground {
+    background-color: #fff;
+}
+.addproduct {
+    width: 100%;
+    .detailed{
+        display: flex;
+        justify-content: space-between;
+        .addImaged {
+            width: 20%;
+            padding: 20px;
+        }
+        .productDetails {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            div {
+                width: 50%;
+                input {
+                    border: none;
+                    outline: none;
+                }
+                hr {
+                    width: 80%;
+                    float: left;
+                }
+            }
+        }
+    }
+    .add {
+        width: 20%;
+        margin-top: 20px;
+    }
+
 }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="search">
+        <div class="searchtext">
+            <input type="text" placeholder="search" class="searchInput">
+            <div class="searchicon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container noBackground">
+        <div class="filter">
+            <div class="gender">
+                <i class="fa-solid fa-venus"></i>
+                <br>
+                <i class="fa-solid fa-mars"></i>
+            </div>
+            <div class="categories">
+                <div class="category">
+                    <img src="./resources/images/ring.svg" alt="">
+                    <p>кольцo</p>
+                </div>
+                <div class="category">
+                    <img src="./resources/images/necklace.svg" alt="">
+                    <p>колье</p>
+                </div>
+                <div class="category">
+                    <img src="./resources/images/earings.svg" alt="">
+                    <p>серьги</p>
+                </div>
+                <div class="category">
+                    <img src="./resources/images/chain.svg" alt="">
+                    <p>Цепь</p>
+                </div>
+                <div class="category">
+                    <img src="./resources/images/brooch.svg" alt="">
+                    <p>Брошь</p>
+                </div>
+                <div class="category">
+                    <img src="./resources/images/pendants.svg" alt="">
+                    <p>кулоны </p>
+                </div>
+                <div class="category">
+                    <img src="./resources/images/bracelets.svg" alt="">
+                    <p>браслеты</p>
+                </div>
+                <div class="addCategory category dropdowns">
+                    <button onclick="addCategories()" class="dropbtn btncategory">+</button>
+                    <div id="addCategory" class="dropdown-content widthCategory">
+                        <div class="top">
+                            <p>добавить категория</p>
+                            <i class="fa-solid fa-xmark" onclick="addCategories()"></i>
+                        </div>
+                        <div class="genders">
+                            <div class="female">
+                                <i class="fa-solid fa-venus"></i>
+                                <span>женский</span>
+                            </div>
+                            <div class="male">
+                                <i class="fa-solid fa-mars"></i>
+                                <span>мужской</span>
+                            </div>
+                        </div>
+                      <input type="text" placeholder="категория" class="names">
+                      <hr>
+                      <input type="file" id="myFile" style="display:none;" />
+                      <button type="button" onclick="document.getElementById('myFile').click();" class="uploadPic">
+                        <img src="./resources/images/uploadImage.png" alt="">
+                        <br>
+                        <p>загрузить фото</p>
+                      </button>
+                      
+                      <button class="add">добавить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elements">
+            <div class="elementsTop">
+                <div class="subCategories">
+                    <div class="subCategorySection">
+                        <div class="subcategory">кольцo</div>
+                        <div class="subcategory">обручальные </div>
+                        <div class="subcategory">кольца кастеты </div>
+                        <div class="subcategory">коктейльные</div>
+                        <div class="subcategory">помолвочные</div>
+                    </div>
+                    <div class="rowSection">
+                        <div class="clickedSection first"></div>
+                        <div class="clickedSection"></div>
+                        <div class="clickedSection"></div>
+                        <div class="clickedSection"></div>
+                        <div class="clickedSection"></div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="addSubCategories()" class="dropbtn">+</button>
+                    <div id="addSubCategory" class="dropdown-content">
+                        <div class="top">
+                            <p>кольцo : добавить подкатегория</p>
+                            <i class="fa-solid fa-xmark" onclick="addSubCategories()"></i>
+                        </div>
+                      <input type="text" placeholder="подкатегория" class="names">
+                      <hr>
+                      <button class="add">добавить</button>
+                    </div>
+                  </div>                  
+            </div>
+        </div>
+        <form action="" class="addproduct">
+            <div class="detailed">
+                <div class="addImaged">
+                    <input type="file" id="myFile" style="display:none;" />
+                    <button type="button" onclick="document.getElementById('myFile').click();" class="uploadPic">
+                      <img src="./resources/images/uploadImage.png" alt="">
+                      <br>
+                      <p>загрузить фото</p>
+                    </button>
+                </div>
+                <div class="productDetails">
+                    <div>
+                        <label for="code">артикул</label> 
+                        <br>
+                        <input type="text" id="code" >
+                        <hr>
+                    </div>
+                    <div>
+                        <label for="price">цена </label>
+                        <br>
+                        <input type="text" id="price">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="add">добавить</button>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/e42f7ffb38.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

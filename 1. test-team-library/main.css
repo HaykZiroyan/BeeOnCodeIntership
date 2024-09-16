@@ -68,9 +68,15 @@ body {
   background: #fff;
   width: 3%;
 }
+.container .elements .addProduct {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px;
+}
 .container .elements .elementsTop {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 .container .elements .elementsTop .subCategories {
   width: 71%;
@@ -92,6 +98,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 0px 10px 0px #00000040;
 }
 .container .elements .elementsTop .subCategories .rowSection .clickedSection {
   width: 20%;
@@ -243,4 +250,38 @@ body {
 }
 .uploadPic p {
   color: white;
+}
+.noBackground {
+  background-color: #fff;
+}
+.addproduct {
+  width: 100%;
+}
+.addproduct .detailed {
+  display: flex;
+  justify-content: space-between;
+}
+.addproduct .detailed .addImaged {
+  width: 20%;
+  padding: 20px;
+}
+.addproduct .detailed .productDetails {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.addproduct .detailed .productDetails div {
+  width: 50%;
+}
+.addproduct .detailed .productDetails div input {
+  border: none;
+  outline: none;
+}
+.addproduct .detailed .productDetails div hr {
+  width: 80%;
+  float: left;
+}
+.addproduct .add {
+  width: 20%;
+  margin-top: 20px;
 }
