@@ -8,21 +8,73 @@ const categories = document.getElementById("categories")
 fetch("http://localhost:3000/galery")
 .then(res => res.json())
 .then(data => {
-    Object.keys(data).forEach(function(key, index) {
-        let category = document.createElement("div")
-        category.className = "category"
-
-        let image = document.createElement("img")
-        image.src = data[key].image
-
-        let text = document.createElement('p')
-        text.textContent = data[key].name
-
-        category.append(image, text)
-
-        categories.appendChild(category)
-    });
+    if (Object.keys(data).length != categories.length) {
+        categories.innerHTML = "";
+        Object.keys(data).forEach(function(key, index) {
+            let category = document.createElement("div")
+            category.className = "category"
+    
+            let image = document.createElement("img")
+            image.src = data[key].image
+    
+            let text = document.createElement('p')
+            text.textContent = data[key].name
+    
+            category.append(image, text)
+    
+            categories.appendChild(category)
+        });
+    }
+    
 })
+
+let loginForm = document.getElementById("myForms");
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let code = document.getElementById("code");
+  let price = document.getElementById("price");
+
+  if (code.value == "" || price.value == "") {
+    alert("Ensure you input a value in both fields!");
+  } else {
+    let product = {
+        "code": code,
+        "price": price
+    }
+    // fetch('http://localhost:3000/galery', {
+    //     method: 'POST',
+    //     header: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify(product)
+    // }).then(response => response.json())
+    code.value = "";
+    price.value = "";
+  }
+});
+// const form = document.querySelector("#myForms");
+
+// async function sendData() {
+//   // Associate the FormData object with the form element
+//   const formData = new FormData(form);
+
+//   try {
+//     const response = await fetch("http://localhost:3000/post", {
+//       method: "POST",
+//       // Set the FormData instance as the request body
+//       body: formData,
+//     });
+//     console.log(await response.json());
+//   } catch (e) {
+//     console.error(e);
+//   }
+// }
+
+// // Take over form submission
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   sendData();
+// });
 // const form = document.getElementById('myForms');
 
 // form.addEventListener('submit', (e) => {

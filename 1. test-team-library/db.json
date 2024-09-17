@@ -37,7 +37,7 @@
         },
         "necklace": {
             "image": "./resources/images/necklace.svg",
-            "name": "кольцo",
+            "name": "колье ",
             "subCategory": [
                 {
                     "name": "обручальные ",
@@ -72,7 +72,7 @@
         },
         "earings": {
             "image": "./resources/images/earings.svg",
-            "name": "кольцo",
+            "name": "серьги",
             "subCategory": [
                 {
                     "name": "обручальные ",
@@ -107,7 +107,7 @@
         },
         "chain": {
             "image": "./resources/images/chain.svg",
-            "name": "кольцo",
+            "name": "Цепь",
             "subCategory": [
                 {
                     "name": "обручальные ",
@@ -142,7 +142,7 @@
         },
         "brooch": {
             "image": "./resources/images/brooch.svg",
-            "name": "кольцo",
+            "name": "Брошь",
             "subCategory": [
                 {
                     "name": "обручальные ",
@@ -177,7 +177,7 @@
         },
         "pendants": {
             "image": "./resources/images/pendants.svg",
-            "name": "кольцo",
+            "name": "кулоны ",
             "subCategory": [
                 {
                     "name": "обручальные ",
@@ -212,7 +212,7 @@
         },
         "bracelets": {
             "image": "./resources/images/bracelets.svg",
-            "name": "кольцo",
+            "name": "браслеты ",
             "subCategory": [
                 {
                     "name": "обручальные ",
